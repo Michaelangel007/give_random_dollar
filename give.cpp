@@ -1,17 +1,27 @@
 /*
+https://github.com/Michaelangel007/give_random_dollar
+
 
 http://www.decisionsciencenews.com/2017/06/19/counterintuitive-problem-everyone-room-keeps-giving-dollars-random-others-youll-never-guess-happens-next/
 
-g++ -Wall -Wextra -std=c++11 give.cpp -o give
+    Imagine a room full of 100 people with 100 dollars each.
+    With every tick of the clock, every person with money
+    gives a dollar to one randomly chosen other person.
+    After some time progresses, how will the money be distributed?
 
+Compile:
 
-give 4 1 1 999 4
+    g++ -Wall -Wextra -std=c++11 give.cpp -o give
 
-give 100 100 1 0
-give 100 100 1 999
-give 100 100 1 999 4
+Examples:
 
-give 100 100 1 999999
+    give 4 1 1 999 4
+
+    give 100 100 1 0
+    give 100 100 1 999
+    give 100 100 1 999 4
+
+    give 100 100 1 999999
 
 */
 
