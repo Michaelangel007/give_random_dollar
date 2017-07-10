@@ -11,6 +11,7 @@ give 100 100 1 0
 give 100 100 1 999
 give 100 100 1 999 4
 
+give 100 100 1 999999
 
 */
 
@@ -131,7 +132,15 @@ void plotWealth( int iTotalWealth = 0 )
     /* */ int  nLines  = 10;
     /* */ int  iLines  = nLines;
 
-    const char aPlot[] = ".X";
+    /* */ int  aWho[] =
+    {
+          -1
+        , -1
+        , iRichest
+    };
+    const int WHO = aWho[ iTotalWealth ];
+
+    const char aPlot[]  = ".X";
     /* */ int  aTotal[] =
     {
           RICH
@@ -149,8 +158,8 @@ void plotWealth( int iTotalWealth = 0 )
 
     printf( "\n===== %s ===== [%d]: $%d\n"
         , aDescription[ iTotalWealth ]
-        , iRichest
-        , nWealth
+        , WHO
+        , TOTAL
     );
 
     while( iLines --> 0 )
