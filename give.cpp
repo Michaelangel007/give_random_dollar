@@ -62,7 +62,7 @@ void dumpWealth()
     {
         if( (iPerson % 25) == 0 )
             printf( "\n%*s", gnWidth, "" );
-        printf( "$%*d, ", gnWidth, gaWealth[ iPerson ] );
+        printf( "$%*d,", gnWidth, gaWealth[ iPerson ] );
     }
     printf( "\n" );
 }
